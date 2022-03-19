@@ -40,7 +40,7 @@ function LastProductInDb(){
                             {lastProduct[0].descrip}
                         </p>
                         <h5>
-                            {lastProduct[0].price}
+                            ${lastProduct[0].price}
                         </h5>
                         {/* <a className="btn btn-danger" target="_blank" rel="nofollow" href="/">View movie detail</a> */}
                     </div>

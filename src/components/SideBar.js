@@ -30,7 +30,7 @@ function SideBar(){
                 {/*<!-- Nav Item - Dashboard -->*/}
                 <li className="nav-item active">
                     <Link className="nav-link" to="/">
-                        <i className="fas fa-solar-panel"></i>
+                        <i className="fas fa-balance-scale"></i>
                         <span>Dashboard - La Guarida</span>
                     </Link>
                 </li>
@@ -60,7 +60,7 @@ function SideBar(){
                 {/*<!-- Nav Item - LastProductInDb -->*/}                
                 <li className="nav-item">
                     <Link className="nav-link collapsed" to="/last-movie-in-db">
-                        <i className="fas fa-seedling"></i>
+                        <i className="fas fa-clipboard"></i>
                         <span>Ultimo producto en DB</span>
                     </Link>
                 </li>
@@ -68,7 +68,7 @@ function SideBar(){
                 {/*<!-- Nav Item - CategoriesInDb -->*/}                
                 <li className="nav-item">
                     <Link className="nav-link collapsed" to="/genres-in-db">
-                        <i className="fas fa-cannabis"></i>
+                        <i className="fas fa-asterisk"></i>
                         <span>Categorias en DB</span>
                     </Link>
                 </li>
