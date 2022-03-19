@@ -6,10 +6,10 @@ function CategoriesInDb() {
 
   useEffect(() => {
 
-     fetch("https://veoverde.herokuapp.com/api/products/")
+     fetch("http://localhost:3001/api/products/categories")
        .then(response => response.json())
-       .then(categories => {
-         setCategories(categories.meta.categoryNames);
+       .then(products => {
+         setCategories(products.categories);
        })
 
   }, []);
@@ -24,14 +24,13 @@ function CategoriesInDb() {
         </div>
         <div className="card-body">
           <div className="row">
-            {categories.length === 0 && "loading"}
-            {categories.length !== 0 &&
+            {categories &&
 
               categories.map((category, i) => {
                 return(
                   <div className="col-lg-6 mb-4" key={i}>
                     <div className="card bg-dark text-white shadow">
-                      <div className="card-body">{`${category.nombre}: ${category.total}`}</div>
+                      <div className="card-body">{`${category.name}: ${category.id}`}</div>
                     </div>
                   </div>
                 )

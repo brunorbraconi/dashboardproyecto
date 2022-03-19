@@ -15,12 +15,12 @@ function SideBar(){
     return(
         <React.Fragment>
             {/*<!-- Sidebar -->*/}
-            <ul className="navbar-nav bg-success bg-gradient sidebar sidebar-dark accordion" id="accordionSidebar">
+            <ul className="navbar-nav bg-danger bg-gradient sidebar sidebar-dark accordion" id="accordionSidebar">
 
                 {/*<!-- Sidebar - Brand -->*/}
                 <a className="sidebar-brand d-flex align-items-center justify-content-center" href="/">
                     <div className="sidebar-brand-icon">
-                        <h1 className="w-100"> La Guarida </h1>
+                        <h1 className="w-100"> Guarida </h1>
                     </div>
                 </a>
 
@@ -118,7 +118,7 @@ function SideBar(){
                             <TopBar />
                             <div className="container-fluid">
                                 <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-                                    <h1 className="h3 mb-0 text-gray-800">Veoverde Dashboard</h1>
+                                    <h1 className="h3 mb-0 text-gray-800">Guarida DB</h1>
                                 </div>
                                 <SearchProducts />
                             </div>
@@ -131,7 +131,7 @@ function SideBar(){
                             <TopBar />
                             <div className="container-fluid">
                                 <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-                                    <h1 className="h3 mb-0 text-gray-800">Veoverde Dashboard</h1>
+                                    <h1 className="h3 mb-0 text-gray-800">Guarida DB</h1>
                                 </div>
                                 <ContentRowProducts />
                             </div>
@@ -144,7 +144,7 @@ function SideBar(){
                             <TopBar />
                             <div className="container-fluid">
                                 <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-                                    <h1 className="h3 mb-0 text-gray-800">Veoverde Dashboard</h1>
+                                    <h1 className="h3 mb-0 text-gray-800">Guarida DB</h1>
                                 </div>
                                 <div className="row">
                                     <LastProductInDb />
@@ -159,7 +159,7 @@ function SideBar(){
                             <TopBar />
                             <div className="container-fluid">
                                 <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-                                    <h1 className="h3 mb-0 text-gray-800">Veoverde Dashboard</h1>
+                                    <h1 className="h3 mb-0 text-gray-800">Guarida DB</h1>
                                 </div>
                                 <div className="row">
                                     <CategoriesInDb />
@@ -174,7 +174,7 @@ function SideBar(){
                             <TopBar />
                             <div className="container-fluid">
                                 <div className="d-sm-flex aligns-items-center justify-content-between mb-4">
-                                    <h1 className="h3 mb-0 text-gray-800">Veoverde Dashboard</h1>
+                                    <h1 className="h3 mb-0 text-gray-800">Guarida DB</h1>
                                 </div>
                                 <Chart />
                             </div>                            
