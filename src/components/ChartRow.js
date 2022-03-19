@@ -5,9 +5,9 @@ function ChartRow(props){
     return (
                 <tr>
                     <td>{props.id}</td>
-                    <td>{props.name}</td>
+                    <td>{props.title}</td>
                     <td>${props.price}</td>
-                    <td>{props.category}</td>
+                    <td>{props.CategoryId}</td>
                 </tr>
             )
     }

@@ -7,7 +7,7 @@ import "./LastProductInDb.css"
 
 function LastProductInDb(){
 
-    const [ lastProduct, setLastProduct ] = useState();
+    const [ lastProduct, setLastProduct ] = useState([]);
     const [ lastProductImage, setLastProductImage ] = useState("");
 
 
@@ -17,7 +17,7 @@ function LastProductInDb(){
              .then(response => response.json())
             .then(product => {
                 setLastProduct(product.product);
-                // setLastProductImage(product.data.image)
+                 setLastProductImage(product.product[0].image)
             })
     },[])
 
@@ -27,17 +27,17 @@ function LastProductInDb(){
                 <div className="card-header py-3">
                     <h5 className="m-0 font-weight-bold text-gray-800">Ultimo Producto en DB</h5>
                 </div>
-                {lastProduct && <div className="card-body"><div className={`lds-dual-ring-lastproduct`}></div></div>}
-                {lastProduct && 
+                {lastProduct.length === 0 && <div className="card-body"><div className={`lds-dual-ring-lastproduct`}></div></div>}
+                {lastProduct.length !== 0 && 
                     <div className="card-body">
                         <div className="text-center">
-                            <img className="img-fluid px-2 px-sm-2 mt-2 mb-4" style={{width: 18 +'rem'}} src={lastProductImage} alt="Last Product in Data Base"/>
+                            <img className="img-fluid px-2 px-sm-2 mt-2 mb-4" style={{width: 18 +'rem'}} src={`http://localhost:3001/img/${lastProductImage}`} alt="Last Product in Data Base"/>
                         </div>
                         <h3>
-                            {lastProduct[0].name}
+                            {lastProduct[0].title}
                         </h3>
                         <p>
-                            {lastProduct[0].description}
+                            {lastProduct[0].descrip}
                         </p>
                         <h5>
                             {lastProduct[0].price}

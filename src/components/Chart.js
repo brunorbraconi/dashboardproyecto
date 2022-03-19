@@ -5,13 +5,13 @@ function Chart (){
 
     const [ productsInDB , setProductsInDB ] = useState([]);
     
-    //useEffect(() => {
-    //     fetch("https://veoverde.herokuapp.com/api/products")
-    //         .then(response => response.json())
-    //         .then(data => {
-    //             setProductsInDB(data.products);
-    //         })
-    // },[]);
+    useEffect(() => {
+         fetch("http://localhost:3001/api/products")
+             .then(response => response.json())
+             .then(products => {
+                 setProductsInDB(products.products);
+             })
+     },[]);
 
     return (
         /* <!-- DataTales Example --> */
