@@ -13,7 +13,7 @@ function LastProductInDb(){
 
     useEffect(() => {
          console.log("me monté");
-         fetch("http://localhost:3001/api/products/lastproduct")
+         fetch("https://la-guarida-del-dragon.herokuapp.com/api/products/lastproduct")
              .then(response => response.json())
             .then(product => {
                 setLastProduct(product.product);

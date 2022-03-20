@@ -6,7 +6,7 @@ function CategoriesInDb() {
 
   useEffect(() => {
 
-     fetch("http://localhost:3001/api/products/categories")
+     fetch("https://la-guarida-del-dragon.herokuapp.com/api/products/categories")
        .then(response => response.json())
        .then(products => {
          setCategories(products.categories);
