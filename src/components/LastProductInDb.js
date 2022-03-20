@@ -31,7 +31,7 @@ function LastProductInDb(){
                 {lastProduct.length !== 0 && 
                     <div className="card-body">
                         <div className="text-center">
-                            <img className="img-fluid px-2 px-sm-2 mt-2 mb-4" style={{width: 18 +'rem'}} src={`http://localhost:3001/img/${lastProductImage}`} alt="Last Product in Data Base"/>
+                            <img className="img-fluid px-2 px-sm-2 mt-2 mb-4" style={{width: 18 +'rem'}} src={`https://la-guarida-del-dragon.herokuapp.com/img/${lastProductImage}`} alt="Last Product in Data Base"/>
                         </div>
                         <h3>
                             {lastProduct[0].title}
